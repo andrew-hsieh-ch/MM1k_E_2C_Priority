@@ -161,33 +161,42 @@ int main()
 
 	printf("Enter customer1 mean_interarrival_time\n");
 	scanf("%f", &C1_mean_interarrival_time);
+	//C1_mean_interarrival_time = 0.5;
 	C1_next_arr_time = expon(C1_mean_interarrival_time);
 
-	printf("Enter customer2 mean_interarrival_time\n");
-	scanf("%f", &C2_mean_interarrival_time);
+	//printf("Enter customer2 mean_interarrival_time\n");
+	//scanf("%f", &C2_mean_interarrival_time);
+	C2_mean_interarrival_time = 0.5;
 	C2_next_arr_time = expon(C2_mean_interarrival_time);
 
-	printf("Enter energy mean_interarrival_time\n");
-	scanf("%f", &E_mean_interarrival_time);
+	//printf("Enter energy mean_interarrival_time\n");
+	//scanf("%f", &E_mean_interarrival_time);
+	E_mean_interarrival_time = 1.3;
 	E_next_arr_time = expon(E_mean_interarrival_time);
 
-	printf("Enter C1_mean_service_time\n");
-	scanf("%f", &C1_mean_service_time);
+	//printf("Enter C1_mean_service_time\n");
+	//scanf("%f", &C1_mean_service_time);
+	C1_mean_service_time = 1;
 
-	printf("Enter C2_mean_service_time\n");
-	scanf("%f", &C2_mean_service_time);
+	//printf("Enter C2_mean_service_time\n");
+	//scanf("%f", &C2_mean_service_time);
+	C2_mean_service_time = 2;
 	
-	printf("Enter C1_priority\n");
-	scanf("%d", &C1_priority);
+	//printf("Enter C1_priority\n");
+	//scanf("%d", &C1_priority);
+	C1_priority = 0;
 	
-	printf("Enter C2_priority\n");
-	scanf("%d", &C2_priority);
+	//printf("Enter C2_priority\n");
+	//scanf("%d", &C2_priority);
+	C2_priority = 0;
 
-	printf("Enter num_delays_required\n");
-	scanf("%d", &Num_Delays_Required);
+	//printf("Enter num_delays_required\n");
+	//scanf("%d", &Num_Delays_Required);
+	Num_Delays_Required = 10000000;
 
-	printf("Enter Customer_K\n");
-	scanf("%d", &C_K);
+	//printf("Enter Customer_K\n");
+	//scanf("%d", &C_K);
+	C_K = 10;
 
 	C_Q_limit = C_K - 1;
 
@@ -211,8 +220,9 @@ int main()
 		C_Priority[i] = 0;
 	}
 
-	printf("Enter Energy_K\n");
-	scanf("%d", &E_K);
+	//printf("Enter Energy_K\n");
+	//scanf("%d", &E_K);
+	E_K = 10;
 
 	E_Q_limit = E_K - 1;
 
